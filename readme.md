@@ -3,6 +3,9 @@
 
 https://wanderlust1234.herokuapp.com
 
+https://wanderlust.tokyo
+(普段はAWSのコストが発生してしまう為、停止)
+
 Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 <p>Wanderlustとは英語で旅をしたい、世界を知りたいという強い気持ち、欲望、衝動のことをあらわす言葉です。</p>
 <p>このアプリを機に少しでも多くの方が海外に興味を持っていただければと思います。</p>
