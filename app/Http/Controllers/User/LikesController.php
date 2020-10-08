@@ -10,7 +10,6 @@ class LikesController extends Controller
 {
     public function store(Request $request)
     {
-       
         \Auth::user()->like($request->id);
         
         return response()->json([
