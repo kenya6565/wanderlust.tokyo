@@ -93,6 +93,7 @@ class TimelineController extends Controller
             'user_info'
         ));
     }
+    
     public function edit(Request $request)
     {
         $edit_post = Post::find($request->id);
