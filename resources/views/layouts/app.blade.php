@@ -11,7 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
- 
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -39,7 +39,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse mr10" id="navbarSupportedContent">
                     @if(Auth::check())
                         <!-- Left Side Of Navbar -->
@@ -197,7 +197,7 @@
                             <img class="rounded-circle img-fluid" src="{{ Storage::disk('s3')->url('public/images/' .Auth::user()->user_icon_image) }}"  alt="Circle image">
                         </div>
                     @elseif(!Auth::check())
-                    
+
                     @else
                         <div class="col-1">
                             <img class="rounded-circle img-fluid" src="{{ asset('images/nonuser.png') }}"  alt="Circle image">

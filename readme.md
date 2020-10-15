@@ -3,6 +3,9 @@
 
 https://wanderlust1234.herokuapp.com
 
+https://wanderlust.tokyo
+(普段はAWSのコストが発生してしまう為、停止)
+
 Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 <p>Wanderlustとは英語で旅をしたい、世界を知りたいという強い気持ち、欲望、衝動のことをあらわす言葉です。</p>
 <p>このアプリを機に少しでも多くの方が海外に興味を持っていただければと思います。</p>
@@ -47,8 +50,9 @@ Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 - mysql 5.7.30(開発環境)
 - JavaScript (jQuery)
 - Bootstrap
-- AWS (EC2,cloud9, S3, VPC,)
+- AWS (cloud9,VPC,EC2,S3,RDS,Route53,ELB,ACM,IAM)
 - Git, GitHub
+- nginx
 - Heroku
 
 ## ER図
@@ -66,13 +70,8 @@ Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 
 ## 今後の実装予定
 
-機能
-
-- 通知機能
-- 投稿をPDF化して保存する機能
-
 インフラ
-<p>①本番環境をHerokuからAWSに変更</p>
-<p>②ローカル環境をcloud9からDockerに変更</p>
-<p>③CU/CIパイプラインにCircle CIを導入</p>
+
+<p>①ローカル環境をcloud9からDockerに変更</p>
+<p>②CU/CIパイプラインにCircle CIを導入</p>
 

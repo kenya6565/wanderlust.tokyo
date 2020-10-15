@@ -60,6 +60,42 @@ class PostTableSeeder extends Seeder
             ]);
         $post->save();
         
+        $post->save();
+
+        $post = new \App\Post([
+            'title' => '江ノ島 日本',
+            'post' => '海の家がたくさんあって人も多かった',
+            'user_id' => '4',
+     
+            ]);
+        $post->save();
+
+        $post = new \App\Post([
+            'title' => '沖縄　日本',
+            'post' => '海でマリンスポーツをした！',
+            'user_id' => '4',
+     
+            ]);
+        $post->save();
+
+        $post = new \App\Post([
+            'title' => 'ソウル　韓国',
+            'post' => '日本みたいな雰囲気でとても過ごしやすかった',
+            'user_id' => '4',
+     
+            ]);
+        $post->save();
+
+        $post = new \App\Post([
+            'title' => 'ニューデリー インド',
+            'post' => '人の密度がヤバイ。。。売ってるものが全て辛かった。。',
+            'user_id' => '4',
+     
+            ]);
+        $post->save();
+        
         }
+
         
 }
+
