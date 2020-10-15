@@ -66,9 +66,4 @@ class TimelineGuestControllerTest extends TestCase
     //     $this->assertGuest($guard = null);
     // }
     
-  
-    
-   
-    
-    
 }
