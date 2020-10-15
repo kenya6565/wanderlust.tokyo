@@ -1304,7 +1304,7 @@
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-
+<<<<<<< HEAD
             "version": "1.0.28",
             "source": {
                 "type": "git",
@@ -1315,7 +1315,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/af7384a12f7cd7d08183390d930c9d0ec629c990",
                 "reference": "af7384a12f7cd7d08183390d930c9d0ec629c990",
-
+=======
+            "version": "1.0.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972",
+>>>>>>> de583c134ee1f94183dcff0843671fc7db65cd55
                 "shasum": ""
             },
             "require": {
@@ -1349,9 +1360,11 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-
+<<<<<<< HEAD
             "time": "2020-08-22T08:43:01+00:00"
-
+=======
+            "time": "2020-10-08T18:58:37+00:00"
+>>>>>>> de583c134ee1f94183dcff0843671fc7db65cd55
         },
         {
             "name": "league/mime-type-detection",
