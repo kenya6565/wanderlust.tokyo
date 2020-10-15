@@ -11,7 +11,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\Feature\ImageService;
 
-class TimelineControllerTest extends TestCase
+class TimelineUserControllerTest extends TestCase
 {
   
     //use RefreshDatabase;
@@ -31,19 +31,18 @@ class TimelineControllerTest extends TestCase
     
     public function test_logout()
     {
-    
         $user = factory(User::class)->create();
         $this->actingAs($user);
         $this->assertTrue(Auth::check());
      
          // ログアウトを実行
-        $response = $this->post('logout');
-     
+        Auth::logout();
+        
+        // Welcomeページにリダイレクトすることを確認
+        //$response->assertRedirect('/');
          // 認証されていない
-        $this->assertFalse(Auth::check());
-     
-         // Welcomeページにリダイレクトすることを確認
-        $response->assertRedirect('/');
+        $this->assertGuest($guard = null);
+
     }
     
     public function test_showPostDetail()
