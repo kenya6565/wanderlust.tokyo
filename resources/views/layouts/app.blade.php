@@ -11,11 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-<<<<<<< HEAD
  
-=======
 
->>>>>>> de583c134ee1f94183dcff0843671fc7db65cd55
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
