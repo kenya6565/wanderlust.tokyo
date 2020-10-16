@@ -35,7 +35,6 @@ class PostTableSeeder extends Seeder
         $post->save();
         
        
-        
         $post = new \App\Post([
             'title' => 'オペラハウス オーストラリア',
             'post' => '中には入れなかったけど近くにあったレストランで景色を見ながら食事を楽しめました',
