@@ -47,6 +47,8 @@ Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 
 - PHP 7.2.31
 - Laravel  5.8.38
+- Docker,Docker-compose
+- CircleCi
 - mysql 5.7.30(開発環境)
 - JavaScript (jQuery)
 - Bootstrap
@@ -66,5 +68,6 @@ Wanderlustは世界の名所を投稿してシェアできるSNSサイトです
 - 全体的に統一感のある印象を持つようなビューになるようにしました。
 - ポートフォリオの内容は誰かの悩みを解決できるサービスにしようと心がけました。(気軽に世界の名所を投稿、共有、閲覧できる内容です。)
 - GitHubによるisuue管理を繰り返すことでチーム開発を見据えて開発を行ってきました。
+- 他者との差別化、モダンな技術の採用のためにdocker,CiecleCI,AWSをそれぞれ採用しました
 
 
