@@ -30,7 +30,10 @@
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
             <div class="container">
                 @if($errors->first('title'))
-                    <p style="font-size: 0.7rem; color: red; padding: 0 2rem;">※{{$errors->first('title')}}</p>
+                  <p style="font-size: 0.7rem; color: red; margin top:0;">※{{$errors->first('title')}}</p>
+                @endif
+                @if($errors->first('post'))
+                  <p style="font-size: 0.7rem; color: red; margin top:0;">※{{$errors->first('post')}}</p>
                 @endif
                 <a class="navbar-brand" href="{{ action('TopController@index' )}}">
                     <i class="fas fa-plane-departure faa-wrench animated"></i>
@@ -80,9 +83,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @if($errors->first('post'))
-                                        <p style="font-size: 0.7rem; color: red; padding: 0 2rem;">※{{$errors->first('post')}}</p>
-                                    @endif
                                 </form>
                             </li>
                             <li class="nav-item">
