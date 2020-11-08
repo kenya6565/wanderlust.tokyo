@@ -63,6 +63,7 @@
                             @endif
                             @if(Auth::id() == $user_info->id)
                                 <a href="{{ action('User\PagesController@edit', ['id' => $user_info->id] )}}" role="button" class="btn btn-secondary">編集</a>
+              
                             @endif
                         </div>
                     </div>
