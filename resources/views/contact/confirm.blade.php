@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 <form method="POST" action="{{ route('contact.send') }}">
