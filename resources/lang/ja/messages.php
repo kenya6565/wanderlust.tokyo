@@ -36,7 +36,10 @@ return [
     'post' => '投稿',
     'close' => '閉じる',
     'file' => '画像(任意) **2Mを超える画像は投稿できません**:',
-    
+    'inquiry' => 'お問い合わせ',
+    'title_of_inquiry' => 'タイトル',
+    'content_of_inquiry' => 'お問い合わせ内容',
+    'example' => '例): 画像投稿に関して',
     
     
 ];

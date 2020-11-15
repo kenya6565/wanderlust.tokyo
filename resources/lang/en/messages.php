@@ -36,6 +36,11 @@ return [
     'post' => 'Post',
     'close' => 'Close',
     'file' => 'Image (option) **You cannot post an image that exceeds more than 2M**:',
+    'inquiry' => 'Contact Us',
+    'title_of_inquiry' => 'Title',
+    'content_of_inquiry' => 'Content of inquiry',
+    'example' => 'Eg): Regarding posting images',
+    
     
 
     

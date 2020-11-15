@@ -23,6 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/utility.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
     @yield('css')
 </head>
 <body>
@@ -168,7 +169,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="{{ action('ContactController@index' )}}">お問い合わせ</a>
+                                <a class="nav-link" href="{{ action('ContactController@index' )}}"><i class="fas fa-file-signature"></i>{{ __('messages.inquiry') }}</a>
                         </li>
                         @guest
                             <li class="nav-item">
