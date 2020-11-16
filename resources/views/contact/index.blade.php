@@ -1,49 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- <form method="POST" action="{{ route('contact.confirm') }}">
-    @csrf
-
-    <label>メールアドレス</label>
-    <input
-        name="email"
-        value="{{ old('email') }}"
-        type="text">
-    @if ($errors->has('email'))
-        <p class="error-message">{{ $errors->first('email') }}</p>
-    @endif
-
-    <label>タイトル</label>
-    <input
-        name="title"
-        value="{{ old('title') }}"
-        type="text">
-    @if ($errors->has('title'))
-        <p class="error-message">{{ $errors->first('title') }}</p>
-    @endif
-
-
-    <label>お問い合わせ内容</label>
-    <textarea name="body">{{ old('body') }}</textarea>
-    @if ($errors->has('body'))
-        <p class="error-message">{{ $errors->first('body') }}</p>
-    @endif
-
-    <button type="submit">
-        入力内容確認
-    </button>
-</form> -->
 <div class="container">
   <div class="pt20 row justify-content-center">
     <div class="col-md-8">
       <div class="card">
+        @if ($errors->has('email'))
+          <p class="error-message" style="margin-left: 20px; padding-top: 20px; font-size: 0.7rem; color: red;">{{ $errors->first('email') }}</p>
+        @endif
         <div class="card-body">
+        
           <form method="POST" action="{{ route('contact.confirm') }}">
           @csrf
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>{{ __('messages.email') }}</p>
               <input type="text" class="Form-Item-Input @error('email') is-invalid @enderror" placeholder="example@gmail.com"  name="email" value="{{ old('email') }}" required autocomplete="email">
-             
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>{{ __('messages.title_of_inquiry') }}</p>

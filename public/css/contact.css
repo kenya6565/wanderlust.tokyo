@@ -34,7 +34,7 @@
   max-width: 248px;
   letter-spacing: 0.05em;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label {

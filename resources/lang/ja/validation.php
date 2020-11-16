@@ -39,7 +39,7 @@ return [
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
+    'email' => ':attribute に@を入力してください。',
     'ends_with' => 'The :attribute must end with one of the following: :values',
     'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
@@ -148,7 +148,8 @@ return [
     'attributes' => [
         'title' => 'タイトル',
         'name' => '名前',
-        'post' => '本文'
+        'post' => '本文',
+        'email' => 'Eメールアドレス'
     ],
 
 ];

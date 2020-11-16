@@ -70,16 +70,8 @@ class RegisterController extends Controller
      */
     protected function create(Request $request)
     {
-        //$a = $request['user_icon_image'];
-        //dd($a);
-
-        //dd($request->user_icon_image);
-        //dd($request['user_icon_image']->getClientOriginalName());
-        //dd($image);
+       
         if ($request->hasFile('user_icon_image')) { //"photo" は input type の name属性
-            
-           
-            
             
             $image_hash = $request->file('user_icon_image')->hashName();
             Storage::disk('s3')->put('public/images/',$request->file('user_icon_image'),'public');
