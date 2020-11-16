@@ -23,6 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/utility.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
     @yield('css')
 </head>
 <body>
@@ -167,6 +168,9 @@
                                 @endforeach
                             </ul>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{{ action('ContactController@index' )}}"><i class="fas fa-file-signature"></i>{{ __('messages.inquiry') }}</a>
+                        </li>
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('messages.login') }}</a>
@@ -176,6 +180,7 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('messages.register') }}</a>
                                 </li>
                             @endif
+                            
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
