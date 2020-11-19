@@ -40,6 +40,12 @@ return [
     'title_of_inquiry' => 'タイトル',
     'content_of_inquiry' => 'お問い合わせ内容',
     'example' => '例): 画像投稿に関して',
+    'send' => '送信する',
+    'fix' => '入力内容修正',
+    'check' => '入力内容確認',
+    'back' => 'タイムラインに戻る',
+    'complete' => '送信完了',
+
     
     
 ];

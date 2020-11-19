@@ -13,18 +13,18 @@
           <form method="POST" action="{{ route('contact.confirm') }}">
           @csrf
             <div class="Form-Item">
-              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>{{ __('messages.email') }}</p>
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required" style=" width: auto; padding : 8px;">{{ __('messages.must') }}</span>{{ __('messages.email') }}</p>
               <input type="text" class="Form-Item-Input @error('email') is-invalid @enderror" placeholder="example@gmail.com"  name="email" value="{{ old('email') }}" required autocomplete="email">
             </div>
             <div class="Form-Item">
-              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>{{ __('messages.title_of_inquiry') }}</p>
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required" style=" width: auto; padding : 8px;">{{ __('messages.must') }}</span>{{ __('messages.title_of_inquiry') }}</p>
               <input type="text" class="Form-Item-Input @error('title') is-invalid @enderror" placeholder="{{ __('messages.example') }}" name="title" value="{{ old('title') }}" required autocomplete="title">
             </div>
             <div class="Form-Item">
-              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>{{ __('messages.content_of_inquiry') }}</p>
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required" style=" width: auto; padding : 8px;">{{ __('messages.must') }}</span>{{ __('messages.content_of_inquiry') }}</p>
               <textarea class="Form-Item-Textarea @error('body') is-invalid @enderror" name="body" required autocomplete="body">{{ old('body') }}</textarea>
             </div>
-            <input type="submit" class="Form-Btn" value="入力内容確認">
+            <input type="submit" class="Form-Btn" value="{{ __('messages.check') }}">
           </form>
         </div>
       </div>
