@@ -40,6 +40,11 @@ return [
     'title_of_inquiry' => 'Title',
     'content_of_inquiry' => 'Content of inquiry',
     'example' => 'Eg): Regarding posting images',
+    'send' => 'Send',
+    'fix' => 'Modify the inputs',
+    'check' => 'Check the inputs',
+    'back' => 'Back to Timeline',
+    'complete' => 'Contact complete',
     
     
 
