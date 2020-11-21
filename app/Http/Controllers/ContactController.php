@@ -64,7 +64,11 @@ class ContactController extends Controller
             //再送信を防ぐためにトークンを再発行
             $request->session()->regenerateToken();
 
-            return view('contact.thanks');
+            if(Auth::check()){
+              return redirect(route('user_timeline'))->with('flash_message', 'お問い合わせありがとうございます');
+            }else{
+              return redirect(route('guest_timeline'))->with('flash_message', 'お問い合わせありがとうございます');
+            }
         }
     }
 }

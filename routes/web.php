@@ -14,14 +14,9 @@
 
 Route::get('/', 'TopController@index')->name('top');
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
-
 //お問い合わせ入力ページ
 Route::get('/contact', 'ContactController@index')->name('contact.index');
-
-//確認ページ
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
-
-//送信完了ページ
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 
 //未ログイン時
@@ -32,8 +27,6 @@ Route::group(['prefix' => 'guest'], function () {
     Route::get('followings/{id}', 'Guest\FollowsController@showFollowings')->name('guest_followings');
     Route::get('followers/{id}', 'Guest\FollowsController@showFollowers')->name('guest_followers');
 });
-
-
 
 Auth::routes();
 //ログイン時
